@@ -15,19 +15,23 @@
 
         <!-- Electron beam animations -->
         <CheckBoxPreference android:key="electron_beam_animation_on"
-            android:title="@string/pref_electron_beam_animation_on" />
+            android:title="@string/pref_electron_beam_animation_on" 
+            android:defaultValue="false"/>
 
         <CheckBoxPreference android:key="electron_beam_animation_off"
-            android:title="@string/pref_electron_beam_animation_off" />
+            android:title="@string/pref_electron_beam_animation_off" 
+            android:defaultValue="true" />
 
         <CheckBoxPreference android:key="pref_use_bravia"
             android:title="@string/pref_use_bravia_title"
-            android:summary="@string/pref_use_bravia_summary" />
+            android:summary="@string/pref_use_bravia_summary" 
+            android:defaultValue="true" />
 
         <!-- ICS Rotation animation -->
         <CheckBoxPreference android:key="pref_rotation_animation"
             android:title="@string/pref_rotation_animation_title"
-            android:summary="@string/pref_rotation_animation_summary"/>
+            android:summary="@string/pref_rotation_animation_summary"
+            android:defaultValue="true"/>
 
         <ListPreference
                 android:key="window_animations"
