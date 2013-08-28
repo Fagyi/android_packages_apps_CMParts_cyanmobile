@@ -6,18 +6,21 @@
         android:title="@string/general_title">
 
         <CheckBoxPreference android:key="pref_jit_mode"
-            android:title="@string/pref_jit_mode_title" android:summary="@string/pref_jit_mode_summary" />
+            android:title="@string/pref_jit_mode_title" android:summary="@string/pref_jit_mode_summary" 
+            android:defaultValue="true" />
 
         <ListPreference
             android:key="pref_use_dithering"
             android:dialogTitle="@string/pref_use_dithering_title"
             android:title="@string/pref_use_dithering_title" android:summary="@string/pref_use_dithering_summary"
             android:entries="@array/dithering_entries"
-            android:entryValues="@array/dithering_values" />
+            android:entryValues="@array/dithering_values"
+            android:defaultValue="1" />
 
         <CheckBoxPreference android:key="pref_use_16bpp_alpha"
             android:title="@string/pref_use_16bpp_alpha_title"
-            android:summary="@string/pref_use_16bpp_alpha_summary" />
+            android:summary="@string/pref_use_16bpp_alpha_summary"
+            android:defaultValue="false" />
 
         <CheckBoxPreference android:key="pref_disable_bootanimation"
             android:title="@string/pref_disable_bootanimation_title"
@@ -26,7 +29,8 @@
         <CheckBoxPreference android:key="pref_enable_bootsound"
             android:title="@string/pref_enable_bootsound_title"
             android:summaryOn="@string/pref_enable_bootsound_play_summary" 
-            android:summaryOff="@string/pref_enable_bootsound_not_summary" />
+            android:summaryOff="@string/pref_enable_bootsound_not_summary"
+            android:defaultValue="false"/>
 
         <ListPreference android:key="pref_volume_bootsound"
             android:dependency="pref_enable_bootsound"
@@ -50,7 +54,8 @@
             android:dialogTitle="@string/pref_sd_readahead_title"
             android:title="@string/pref_sd_readahead_title" android:summary="@string/pref_sd_readahead_summary"
             android:entries="@array/entries_sd_readahead"
-            android:entryValues="@array/values_sd_readahead" />
+            android:entryValues="@array/values_sd_readahead"
+            android:defaultValue="2048"/>
 
     </PreferenceCategory>
 	<PreferenceCategory />
