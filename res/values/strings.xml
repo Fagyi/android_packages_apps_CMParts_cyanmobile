@@ -1222,7 +1222,7 @@
     <string name="spareparts_summary">Spare Parts for device</string>
     <string name="bugreports_title">Bug Report Sender</string>
     <string name="bugreports_summary">Send Bug report to Developer rom</string>
-    <string name="dspmanager_title">DSP Manager</string>
+    <string name="dspmanager_title">ViPER4Android Audio FX</string>
     <string name="dspmanager_summary">Device audio settings</string>
     <string name="stk_title">SIM toolkit</string>
     <string name="stk_summary">SIM menu option</string>
