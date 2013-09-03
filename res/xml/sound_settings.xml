@@ -8,8 +8,8 @@
                 <PreferenceScreen android:key="dspmanager_settings"
                         android:title="@string/dspmanager_title" android:summary="@string/dspmanager_summary">
                         <intent android:action="android.intent.action.MAIN"
-                                android:targetPackage="com.bel.android.dspmanager"
-                                android:targetClass="com.bel.android.dspmanager.activity.DSPManager" />
+                                android:targetPackage="com.vipercn.viper4android"
+                                android:targetClass="com.vipercn.viper4android.activity.ViPER4Android" />
                 </PreferenceScreen>
 
 	<!-- Notifications -->
