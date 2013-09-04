@@ -373,7 +373,7 @@ If disable option below will only change color for popup and other
     <string name="pref_lockscreen_slide_delay_title">Csúszó zár késleltetés bekapcsolása</string>
     <string name="pref_lockscreen_slide_delay_summary">Csúszó zár késleltetve megjelenése a Biztonsági zár megjelenése előtt</string>
     <string name="pref_lockscreen_slide_timeout_lock_delay">Képernyő elsötétedés utáni késleltetés</string>
-    <string name="pref_lockscreen_slide_screenoff_lock_delay">Kéépernyő kikapcsolás utáni késleltetés</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Képernyő kikapcsolás utáni késleltetés</string>
     <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Csúszó zár bekapcsolásának késleltetése miután a képernyő elsötétedett</string>
     <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Csúszó zár bekapcsolásának késleltetése miután a képernyő kikapcsolt</string>
     <string name="pref_lockscreen_fuzzy_clock_title">Idő stíls Widget</string>
