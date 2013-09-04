@@ -78,7 +78,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String ENABLE_BOOTSOUND_PERSIST_PROP = "persist.sys.nobootsound";
 
-    private static final int ENABLE_BOOTSOUND_DEFAULT = 1;
+    private static final int ENABLE_BOOTSOUND_DEFAULT = 0;
 
     private static final String BOOTVOLSOUND_PREF = "pref_volume_bootsound";
 
