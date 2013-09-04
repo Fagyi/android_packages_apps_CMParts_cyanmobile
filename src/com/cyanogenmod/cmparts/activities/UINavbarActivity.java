@@ -129,7 +129,7 @@ public class UINavbarActivity extends PreferenceActivity implements OnPreference
         navBackgroundImageTmp = new File(getApplicationContext().getFilesDir()+"/navb_background.tmp");
 
         int naviAnimatePref = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVI_BUTTONS_ANIMATE, 20000);
+                Settings.System.NAVI_BUTTONS_ANIMATE, 0);
 	mNaviAnimate = (ListPreference) prefSet.findPreference(PREF_NAVI_BAR_ANI);
         mNaviAnimate.setValue(String.valueOf(naviAnimatePref));
         mNaviAnimate.setOnPreferenceChangeListener(this);
