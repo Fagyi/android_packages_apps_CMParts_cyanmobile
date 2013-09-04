@@ -82,7 +82,7 @@ public class CallActivity extends PreferenceActivity implements OnPreferenceChan
 	
         mMenuButtonAnswersCall = (CheckBoxPreference) prefSet.findPreference(MENU_BUTTON_ANSWERS_CALL_PREF);
         mMenuButtonAnswersCall.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.MENU_BUTTON_ANSWERS_CALL, 1) != 0);
+                Settings.System.MENU_BUTTON_ANSWERS_CALL, 0) != 0);
         mMenuButtonAnswersCall.setOnPreferenceChangeListener(this);
 
         mPickUpToCall = (CheckBoxPreference) prefSet.findPreference(PICK_UP_TO_CALL_PREF);
@@ -92,7 +92,7 @@ public class CallActivity extends PreferenceActivity implements OnPreferenceChan
 
         p = (CheckBoxPreference) prefSet.findPreference(INCALL_UI_FORCE_PREF);
         p.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.PHONE_FORCE_INCOMING_CALL_UI, 0) != 0);
+                Settings.System.PHONE_FORCE_INCOMING_CALL_UI, 1) != 0);
         p.setOnPreferenceChangeListener(this);
 
 	p = (CheckBoxPreference) prefSet.findPreference(RINGER_LOOP);
@@ -117,7 +117,7 @@ public class CallActivity extends PreferenceActivity implements OnPreferenceChan
 
         mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
         mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.BACK_BUTTON_ENDS_CALL, 1) != 0);
+                Settings.System.BACK_BUTTON_ENDS_CALL, 0) != 0);
         mBackButtonEndsCall.setOnPreferenceChangeListener(this);
     }
 
