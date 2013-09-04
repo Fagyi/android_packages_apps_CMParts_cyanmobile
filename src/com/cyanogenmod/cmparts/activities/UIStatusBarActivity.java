@@ -489,7 +489,7 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_SYNC, 1) != 1) && (Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, 0) == 4));
         mStatusBarTiny.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUSBAR_TINY_EXPANDED, 1) == 1));
+                Settings.System.STATUSBAR_TINY_EXPANDED, 0) == 1));
         mStatusBarRam.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_SHOWRAM, 1) == 1));
         mStatusBarIconex.setChecked((Settings.System.getInt(getContentResolver(),
