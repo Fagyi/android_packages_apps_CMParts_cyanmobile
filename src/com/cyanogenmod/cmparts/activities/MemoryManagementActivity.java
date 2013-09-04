@@ -40,7 +40,7 @@ public class MemoryManagementActivity extends PreferenceActivity implements
 
     private static final String COMPCACHE_PERSIST_PROP = "persist.service.compcache";
 
-    private static final String COMPCACHE_DEFAULT = SystemProperties.get("ro.compcache.default");
+    private static final String COMPCACHE_DEFAULT = "32"
 
     private static final String GENERAL_CATEGORY = "general_category";
 
@@ -48,13 +48,13 @@ public class MemoryManagementActivity extends PreferenceActivity implements
 
     private static final String PURGEABLE_ASSETS_PERSIST_PROP = "persist.sys.purgeable_assets";
 
-    private static final String PURGEABLE_ASSETS_DEFAULT = "0";
+    private static final String PURGEABLE_ASSETS_DEFAULT = "1";
 
     private static final String GMAPS_HACK_PREF = "pref_gmaps_hack";
 
     private static final String GMAPS_HACK_PERSIST_PROP = "persist.sys.gmaps_hack";
 
-    private static final String GMAPS_HACK_DEFAULT = "0";
+    private static final String GMAPS_HACK_DEFAULT = "1";
 
     public static final String KSM_RUN_FILE = "/sys/kernel/mm/ksm/run";
 
@@ -84,7 +84,7 @@ public class MemoryManagementActivity extends PreferenceActivity implements
 
     private static final String LOCK_MMS_PREF = "pref_lock_mms";
 
-    private static final int LOCK_HOME_DEFAULT = 0;
+    private static final int LOCK_HOME_DEFAULT = 1;
 
     private static final int LOCK_MMS_DEFAULT = 0;
 
@@ -94,13 +94,13 @@ public class MemoryManagementActivity extends PreferenceActivity implements
 
     private static final String LOWMEMKILL_PROP = "lowmemkill";
 
-    public static final String LOWMEMKILL_PREF_DEFAULT = "2560,4096,6144,11264,11776,14336";
+    public static final String LOWMEMKILL_PREF_DEFAULT = "2560,3840,6400,12800,12800,25600";
 
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
 	
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
 	
-    private static final String SCROLLINGCACHE_DEFAULT = "0";
+    private static final String SCROLLINGCACHE_DEFAULT = "3";
 
     private static final String HEAPSIZE_PREF = "pref_heapsize";
 
@@ -108,7 +108,7 @@ public class MemoryManagementActivity extends PreferenceActivity implements
 
     private static final String HEAPSIZE_PERSIST_PROP = "persist.sys.vm.heapsize";
 
-    private static final String HEAPSIZE_DEFAULT = "16m";
+    private static final String HEAPSIZE_DEFAULT = "64m";
 
     private ListPreference mCompcachePref;
 
