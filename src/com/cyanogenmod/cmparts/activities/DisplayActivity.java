@@ -103,7 +103,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
 
     private static final String USE_BRAVIA_PERSIST_PROP = "persist.service.swiqi.enable";
     
-    private static final String USE_BRAVIA_DEFAULT = "0";
+    private static final String USE_BRAVIA_DEFAULT = "1";
 
     private static final String WINDOW_ANIMATIONS_PREF = "window_animations";
 
@@ -214,7 +214,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
                     Settings.System.ELECTRON_BEAM_ANIMATION_ON,
                     getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOnAnimation) ? 1 : 0) == 1);
             mElectronBeamAnimationOff.setChecked((Settings.System.getInt(getContentResolver(),
-                    Settings.System.ELECTRON_BEAM_ANIMATION_OFF, 0) == 1) && getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOffAnimation));
+                    Settings.System.ELECTRON_BEAM_ANIMATION_OFF, 1) == 1) && getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOffAnimation));
         } else {
             /* Hide Electron Beam controls if disabled */
             ((PreferenceCategory) prefSet.findPreference(GENERAL_CATEGORY))
@@ -280,7 +280,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         /* Rotation */
         mRotationReversePref = (CheckBoxPreference) prefSet.findPreference(ROTATION_REVERSE_PREF);
         mRotationReversePref.setChecked((Settings.System.getInt(getContentResolver(),
-                    Settings.System.REVERSE_ROTATIONS, 0) == 1));
+                    Settings.System.REVERSE_ROTATIONS, 1) == 1));
 
         mRotation0Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_0_PREF);
         mRotation90Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_90_PREF);
